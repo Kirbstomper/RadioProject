@@ -1,12 +1,33 @@
 
-</!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-		<link type="text/css" href="/skin/pink.flag/jplayer.blue.monday.css" rel="stylesheet" />
-	    <script type="text/javascript" src="/js/jquery.min.js"></script>
-	    <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
-	<title>Niner Free Radio</title>
-</head>
+    <head>
+      <link type="text/css" href="/dist/skin/pink.flag/css/jplayer.pink.flag.min.css" rel="stylesheet" />
+      <script type="text/javascript" src="/js/jquery.min.js"></script>
+      <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $("#jquery_jplayer_1").jPlayer({
+            ready: function () {
+              $(this).jPlayer("setMedia", {
+                title: "Bubble",
+                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+                oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+              });
+            },
+            cssSelectorAncestor: "#jp_container_1",
+            swfPath: "/js",
+            supplied: "m4a, oga",
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true,
+            remainingDuration: true,
+            toggleDuration: true
+          });
+        });
+      </script>
+    </head>
 <body>
 	
 	
