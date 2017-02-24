@@ -5,9 +5,9 @@ A user curated radio station broadcast to the world wide web and hosted in my li
 Tools
 
 Raspberri Pi for hosting
--FFPMEG : Streaming audio
--Appache Web Server
+-VLC : Streaming audio
+-Appache: Web Server
 
 Javascript
-  -Ajax
+  -Jplayer (and by extention jquery )
 HTML5
